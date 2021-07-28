@@ -1,0 +1,268 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+
+/* Root Styles */
+:root{
+--Pink: hsl(322, 100%, 66%);
+--Very-Pale-Cyan: hsl(193, 100%, 96%);
+--Very-Dark-Cyan: hsl(192, 100%, 9%);
+--Grayish-Blue: hsl(208, 11%, 55%);
+}
+
+/* General Styles */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1,h2,h3,h4 {
+  font-family: 'poppins', sans-serif;
+}
+
+/* Utilities  */
+
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  border-radius: 1rem;
+}
+
+.btn-white {
+  background: white;
+  color: var(--Very-Dark-Cyan);
+}
+
+.btn-primary {
+  background:hsl(322, 100%, 66%);
+  color: white;
+}
+/* Hero Styles */
+
+#hero {
+  height: 100%;
+  background: var(--Very-Pale-Cyan);
+  padding: 3rem 0;
+  position: relative;
+}
+
+#hero > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.hero-container {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.hero-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  z-index: 100;
+}
+
+.hero-nav img{
+  width: 200px;
+}
+
+.hero-nav .btn {
+  width: 15%;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  font-weight: bold;
+}
+
+.hero-content {
+  display: flex;
+  z-index: 100;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
+
+.hero-info h2 {
+  font-size: 2.25rem;
+  letter-spacing: 1.4px;
+  margin-bottom: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-info p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.hero-info .btn {
+  width: 35%;
+  text-align: center;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+/* Main Body Styles */
+
+.main-container {
+  width: 90%;
+  margin: auto;
+  padding: 6rem 0 3rem 0
+}
+
+.main-item {
+  display: flex;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  border-radius: 0.5rem;
+}
+
+.main-item-r {
+  flex-direction: row-reverse;
+}
+
+.main-item-r .item-content p{
+  width: 100%;
+}
+
+
+.main-item-r .item-img img {
+  margin-left: 5rem;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 5rem;
+}
+
+.item-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.item-content p {
+  width: 75%;
+  font-size: 1.1rem;
+  color: var(--Grayish-Blue);
+}
+
+.item-img img {
+  width: 400px;
+}
+
+/* Sign up Box */
+
+.signup {
+  width: 40%;
+  margin: auto;
+  padding: 4rem 1rem;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform:translateY(5rem);
+  background: white;
+}
+
+.signup h2 {
+  margin-bottom: 1rem;
+}
+
+.signup .btn {
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  width: 50%;
+  text-align: center;
+}
+
+/* Fotoer Styles */
+
+#footer {
+  background: var(--Very-Dark-Cyan);
+  height: 50vh;
+  padding: 5rem;
+}
+
+#footer img {
+  width: 200px;
+  margin-bottom: 2rem;
+}
+
+.footer-container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: var(--Very-Pale-Cyan);
+}
+
+.footer-contact-info p{
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+.footer-contact-info p i {
+  margin-right: 1rem;
+}
+
+.footer-links {
+  display: flex;
+}
+
+.footer-links ul {
+  margin-right: 5rem;
+}
+
+.footer-links ul li {
+  margin-bottom: 1rem;
+}
+
+.footer-social i{
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+#footer > p{
+  text-align: right;
+  color: var(--Very-Pale-Cyan);
+}
